@@ -1,21 +1,21 @@
 ------- Question 1 Answer --------
 SELECT name, continent, population 
-FROM world
+FROM world;
 
 ------- Question 2 Answer --------
 SELECT name 
 FROM world
-WHERE population > 200000000
+WHERE population > 200000000;
 
 ------- Question 3 Answer --------
 SELECT name, gdp/population 
 FROM world
-WHERE population > 200000000
+WHERE population > 200000000;
 
 ------- Question 4 Answer --------
 SELECT name, population/1000000 
 FROM world
-WHERE continent = 'South America'
+WHERE continent = 'South America';
 
 ------- Question 5 Answer --------
 SELECT name, population 
@@ -44,7 +44,7 @@ OR (area > 3000000 AND population < 250000000);
 ------- Question 9 Answer --------
 SELECT name, ROUND(population/1000000,2), ROUND(gdp/1000000000,2)
 FROM world
-WHERE continent = 'South America'
+WHERE continent = 'South America';
 
 ------- Question 10 Answer --------
 SELECT name, ROUND(gdp/population, -3)
@@ -54,13 +54,13 @@ WHERE gdp >= 1000000000000;
 ------- Question 11 Answer --------
 SELECT name, capital
 FROM world
-WHERE LENGTH(name) = LENGTH(capital)
+WHERE LENGTH(name) = LENGTH(capital);
 
 ------- Question 12 Answer --------
 SELECT name, capital
 FROM world
 WHERE LEFT(name, 1) = LEFT(capital, 1)
-AND name <> capital
+AND name <> capital;
 
 ------- Question 13 Answer --------
 SELECT name
@@ -70,5 +70,5 @@ AND name LIKE '%e%'
 AND name LIKE '%i%'
 AND name LIKE '%o%'
 AND name LIKE '%u%'
-AND name NOT LIKE '% %'
+AND name NOT LIKE '% %';
 
